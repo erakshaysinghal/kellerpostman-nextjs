@@ -1,0 +1,142 @@
+.outlined-input {
+    position: relative;
+
+    label {
+        position: absolute;
+        font-size: 1rem;
+        left: 0;
+        font-weight: 400;
+        top: 50%;
+        transform: translateY(-50%);
+        background-color: rgba(255, 255, 255, 1);
+        color: rgba(13, 16, 20, 0.6);
+        padding: 0 0.3rem;
+        margin: 0 0.5rem;
+        transition: 0.1s ease-out;
+        transform-origin: left top;
+        pointer-events: none;
+    }
+
+    textarea~label {
+        top: 18%;
+    }
+
+    input,
+    textarea,
+    select {
+        font-size: 1rem;
+        outline: none;
+        border: 1px solid #D4D7DA;
+        height: 60px;
+        font-weight: 400;
+        padding: 0 0.7rem;
+        color: rgba(13, 16, 20, 0.6);
+        background: #ffffff;
+        transition: 0.1s ease-out;
+    }
+
+    textarea {
+        height: 120px;
+    }
+
+    input:focus,
+    textarea:focus,
+    select:focus {
+        border-color: #D4D7DA;
+    }
+
+    input:focus+label,
+    textarea:focus+label,
+    select:focus+label {
+        color: rgba(13, 16, 20, 0.6);
+        top: 0px;
+        transform: translateY(-50%) scale(0.9);
+    }
+
+    input:not(:placeholder-shown)+label,
+    textarea:not(:placeholder-shown)+label,
+    select:not(:placeholder-shown)+label {
+        top: 0px;
+        transform: translateY(-50%) scale(0.9);
+    }
+}
+
+// Outlined Select
+
+.outlined-select {
+    position: relative;
+
+    select {
+        z-index: 10;
+        width: 100%;
+        position: relative;
+        background-color: transparent;
+        font-weight: 400;
+        padding: 1rem 0.7rem;
+        color: rgba(13, 16, 20, 0.6);
+        border: 1px solid #D4D7DA;
+        -webkit-appearance: none;
+        font-size: 1rem;
+        appearance: none;
+    }
+
+    /* Remove focus */
+    select:focus {
+        outline: none;
+        border: 1px solid #D4D7DA;
+    }
+
+    /* Use custom arrow */
+    &::after {
+        position: absolute;
+        content: '';
+        top: 25px;
+        right: 10px;
+        width: 22px;
+        height: 22px;
+        z-index: 9;
+        background: url('/kellerimages/icons/selectarrow.svg') no-repeat;
+    }
+
+    label {
+        color: rgba(13, 16, 20, 0.6);
+        background: #ffffff;
+        font-weight: normal;
+        position: absolute;
+        pointer-events: none;
+        font-weight: 400;
+        padding: 0 5px;
+        left: 10px;
+        z-index: 10;
+        top: 18px;
+        transition: 0.2s ease all;
+    }
+
+    /* active state */
+    select:focus~label,
+    select:valid~label {
+        color: rgba(13, 16, 20, 0.6);
+        top: -8px;
+        transition: 0.2s ease all;
+        font-size: 14px;
+    }
+
+    .option-hidden {
+        visibility: hidden;
+    }
+
+    select:valid:not(focus)~label {
+        color: rgba(13, 16, 20, 0.6);
+        background: #ffffff;
+    }
+
+    select:valid:focus~label {
+        color: rgba(13, 16, 20, 0.6);
+    }
+}
+
+@media (max-width: 991px) {
+    .option-hidden {
+        display: none !important;
+    }
+}

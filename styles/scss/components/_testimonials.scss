@@ -1,0 +1,36 @@
+.testimonialsBlock {
+  border-radius: 0 20px 20px 20px;
+  padding: 80px 28px 36px 28px;
+  margin-top: 98px;
+  .testimonialsImage {
+    margin-top: -130px;
+  }
+}
+
+@media (max-width: 767px) {
+  .testimonials-heading {
+    .starts {
+      margin-bottom: 15px;
+      span {
+        img {
+          width: 19px;
+          height: 19px;
+        }
+      }
+    }
+    .testimonialsReview {
+      .bbbImg {
+        img {
+          width: 110px;
+          height: 38px;
+        }
+      }
+      .googleImg {
+        img {
+          width: 143px;
+          height: 38px;
+        }
+      }
+    }
+  }
+}

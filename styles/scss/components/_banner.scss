@@ -1,0 +1,148 @@
+.whiteCircle {
+  .roundCircle {
+    width: 10px;
+    height: 10px;
+    background-color: $white;
+    opacity: 0.3;
+    border-radius: 100%;
+  }
+
+  .active {
+    opacity: 1;
+  }
+}
+
+.bannerWrapper {
+  background: url('/kellerimages/slider/banner.webp') no-repeat;
+  background-size: 75% 100%;
+
+  &::before {
+    width: 75%;
+    height: 100%;
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.4);
+  }
+
+  .bannerHeading {
+    padding: 92px 0 128px 0;
+    z-index: 9;
+    width: 57%;
+
+    h1 {
+      font-size: 90px;
+      line-height: 91px;
+    }
+
+    .homeDivider {
+      width: 60px;
+      height: 4px;
+    }
+  }
+
+  .bannerCounter {
+    padding: 80px 0;
+
+    .divider {
+      width: 297px;
+      max-width: 100%;
+      border-top: 1px solid #d4d7da;
+    }
+  }
+}
+
+@media (min-width: 1450px) {
+  .bannerWrapper {
+    background-size: 70% 100%;
+
+    &::before {
+      width: 70%;
+    }
+  }
+}
+
+@media (min-width: 1200px) and (max-width: 1399px) {
+  .bannerWrapper {
+    background-size: 72.5% 100%;
+
+    &::before {
+      width: 72.5%;
+    }
+
+    .bannerHeading {
+      width: 80%;
+    }
+
+    .bannerCounter {
+      padding: 50px 0;
+    }
+  }
+}
+
+@media (max-width: 1199px) {
+  .bannerWrapper {
+    background-size: 60% 100%;
+
+    &::before {
+      width: 60%;
+    }
+
+    .bannerHeading {
+      padding: 40px 0;
+      width: 80%;
+
+      h1 {
+        font-size: 36px;
+        line-height: 46px;
+      }
+    }
+
+    .bannerCounter {
+      padding: 50px 0;
+    }
+  }
+}
+
+@media (max-width: 991px) {
+  .bannerWrapper {
+    background-size: 60% 100%;
+
+    &::before {
+      width: 60%;
+    }
+
+    .bannerHeading {
+      position: relative !important;
+      width: 80%;
+      padding: 40px 0;
+
+      h1 {
+        font-size: 36px;
+        line-height: 46px;
+      }
+    }
+
+    .bannerCounter {
+      padding: 30px 0;
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .bannerWrapper {
+    background-size: 100% 60%;
+
+    &::before {
+      width: 100%;
+      height: 59%;
+    }
+    .bannerCounterMain {
+      background: $skyblue;
+    }
+    .mb-36 {
+      margin-bottom: 12px;
+    }
+  }
+}

@@ -1,0 +1,19 @@
+.newsBlock {
+  min-height: 418px;
+  max-height: 418px;
+
+  .newsContent {
+    padding: 40px 40px 52px 40px;
+  }
+}
+
+@media (max-width: 991px) {
+  .newsBlock {
+    .newsContent {
+      h4 {
+        font-size: 18px;
+        line-height: 28px;
+      }
+    }
+  }
+}

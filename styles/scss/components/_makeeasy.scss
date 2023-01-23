@@ -1,0 +1,30 @@
+.easyBock {
+  padding: 48px 40px;
+  min-height: 308px;
+  max-height: 308px;
+  border-top: 1px solid #dee2e6;
+  border-left: 1px solid #dee2e6;
+  border-bottom: 1px solid #dee2e6;
+}
+.easyBlockLast {
+  border-right: 1px solid #dee2e6;
+}
+
+@media (max-width: 1199px) {
+  .easyBock {
+    padding: 48px 20px;
+  }
+}
+
+@media (max-width: 991px) {
+  .easyHeading {
+    h3 {
+      font-size: 24px !important;
+      line-height: 30px;
+    }
+  }
+  .easyBock {
+    min-height: 150px;
+    border: 1px solid #dee2e6;
+  }
+}

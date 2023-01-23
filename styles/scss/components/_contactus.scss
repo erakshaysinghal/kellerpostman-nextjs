@@ -1,0 +1,33 @@
+.bordercyan {
+  border-bottom: 10px solid $cyan;
+}
+
+.contactImage {
+  width: 100%;
+  height: 100%;
+  background: url('/kellerimages/case-highlight/cta.webp') no-repeat;
+  background-size: cover;
+}
+
+.contactContent {
+  padding: 60px;
+}
+
+.button-blue {
+  padding: 20px 24px;
+  background: $lightblue;
+  border: 0;
+}
+
+@media (max-width: 991px) {
+  .contactImage {
+    width: 100%;
+    height: 397px;
+  }
+  .contactContent {
+    padding: 50px 16px;
+    p {
+      font-size: 14px;
+    }
+  }
+}

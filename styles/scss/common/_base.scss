@@ -1,0 +1,353 @@
+body {
+  font-family: 'Gotham Pro', sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: $txtcolor;
+}
+a {
+  text-decoration: none;
+}
+
+// ***************** Font Family **************** //
+.opacity5 {
+  opacity: 0.5;
+}
+
+.fw-300 {
+  font-weight: 300;
+}
+
+.fw-400 {
+  font-weight: 400;
+}
+
+.fw-500 {
+  font-weight: 500;
+}
+
+.fw-600 {
+  font-weight: 600;
+}
+
+.fw-700 {
+  font-weight: 700;
+}
+
+// ***************** Text Color **************** //
+.txt-black {
+  color: $black;
+}
+
+.txt-navyblue {
+  color: $navyblue;
+}
+
+.txt-darkblue {
+  color: $darkblue;
+}
+
+.txt-lightblue {
+  color: $lightblue;
+}
+
+.txt-cyan {
+  color: $cyan;
+}
+
+.txt-skyblue {
+  color: $skyblue;
+}
+
+.txt-color {
+  color: $txtcolor;
+}
+
+.txt-lightgrey {
+  color: $greytext;
+}
+
+// **************** Bg Color **************** //
+.bg-skyblue {
+  background: $skyblue;
+}
+
+.bg-lightblue {
+  background: $lightblue;
+}
+
+.bg-darkblue {
+  background: $darkblue;
+}
+
+.bg-cyan {
+  background: $cyan;
+}
+
+.bg-navyblue {
+  background: $navyblue;
+}
+
+.bg-black {
+  background: $black;
+}
+
+// Line Height
+.lh-18 {
+  line-height: 18px;
+}
+
+.lh-20 {
+  line-height: 20px;
+}
+
+.lh-22 {
+  line-height: 22px;
+}
+
+.lh-24 {
+  line-height: 24px;
+}
+
+.lh-26 {
+  line-height: 26px;
+}
+
+.lh-28 {
+  line-height: 28px;
+}
+
+.lh-30 {
+  line-height: 30px;
+}
+
+// Heading tags
+h2 {
+  font-size: 3em;
+  line-height: 60px;
+}
+
+h3 {
+  font-size: 1.5em;
+}
+
+h4 {
+  font-size: 1.375em;
+  line-height: 30px;
+}
+
+// **************** Font Size ******************* //
+.fs-12 {
+  font-size: 0.75em;
+}
+
+.fs-14 {
+  font-size: 0.875em;
+}
+
+.fs-16 {
+  font-size: 1em;
+}
+
+.fs-18 {
+  font-size: 1.125em;
+}
+
+.fs-20 {
+  font-size: 1.25em;
+}
+
+.fs-22 {
+  font-size: 1.375em;
+}
+
+.fs-24 {
+  font-size: 1.5em;
+}
+
+.fs-26 {
+  font-size: 1.625em;
+}
+
+.fs-28 {
+  font-size: 1.75em;
+}
+
+.fs-30 {
+  font-size: 1.875em;
+}
+
+.fs-36 {
+  font-size: 2.25em;
+}
+
+.fs-48 {
+  font-size: 3em;
+  line-height: 60px;
+}
+
+.fs-60 {
+  font-size: 3.75em;
+  line-height: 70px;
+}
+
+// *********** Padding **************** //
+
+.px-15 {
+  padding: 0 15px;
+}
+
+// *********** Margin **************** //
+.mb-8 {
+  margin-bottom: 8px;
+}
+
+.mb-12 {
+  margin-bottom: 12px;
+}
+
+.mb-15 {
+  margin-bottom: 15px;
+}
+
+.mb-20 {
+  margin-bottom: 20px;
+}
+
+.mb-24 {
+  margin-bottom: 24px;
+}
+
+.mb-30 {
+  margin-bottom: 30px;
+}
+
+.mb-32 {
+  margin-bottom: 32px;
+}
+
+.mb-36 {
+  margin-bottom: 36px;
+}
+
+.mb-40 {
+  margin-bottom: 40px;
+}
+
+.mb-50 {
+  margin-bottom: 50px;
+}
+
+.mt-12 {
+  margin-top: 12px;
+}
+
+.mt-64 {
+  margin-top: 64px;
+}
+
+.mt-80 {
+  margin-top: 80px;
+}
+
+// ************ Section *************** //
+.section-padding {
+  padding: 3.125em 0;
+}
+
+.section-padding2 {
+  padding: 4em 0;
+}
+
+// Button Css
+.btnblue {
+  width: 257px;
+  height: 52px;
+  font-weight: 600;
+  border-radius: 50px;
+  color: $blue;
+  display: flex;
+  font-size: 1em;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background: $lightblue;
+
+  span {
+    display: block;
+    margin-right: 10px;
+
+    &:last-child {
+      padding-top: 2px;
+      margin-right: 0px;
+    }
+  }
+
+  &:hover {
+    color: $blue;
+  }
+}
+
+.btnAboutus {
+  width: 173px;
+  height: 52px;
+  font-weight: 600;
+  border-radius: 50px;
+  color: $blue;
+  display: flex;
+  font-size: 1em;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background: $lightblue;
+
+  span {
+    display: block;
+    margin-right: 10px;
+
+    &:last-child {
+      padding-top: 2px;
+      margin-right: 0px;
+    }
+  }
+
+  &:hover {
+    color: $blue;
+  }
+}
+
+@media (max-width: 1199px) {
+  h2 {
+    font-size: 2em;
+    line-height: 42px;
+  }
+
+  h3 {
+    font-size: 1.5em;
+  }
+
+  h4 {
+    font-size: 1.325em;
+    line-height: 30px;
+  }
+
+  .fs-36 {
+    font-size: 1.75em;
+  }
+
+  .fs-60 {
+    font-size: 30px;
+    line-height: 38px;
+  }
+
+  .mt-80 {
+    margin-top: 30px;
+  }
+
+  // .section-padding {
+  //   padding: 2.5em 0;
+  // }
+
+  .mt-64 {
+    margin-top: 32px;
+  }
+}
